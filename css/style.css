@@ -106,17 +106,19 @@ width: auto;
 /************* NAVIGATION END ************/
 
 
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  width:100%;
+  background: #e5e5e5;
+}
+
 .container {
   background-color: white;
   height: 100%;
   min-height: 825px;
+  width:100%;
 
-}
-
-body {
-  font: 14px/1 'Open Sans', sans-serif;
-  color: #555;
-  background: #e5e5e5;
 }
 
 .gallery {
@@ -457,7 +459,7 @@ font-size: 15px;
 
 /*******responsive************/
 
-@media (max-width: 950px) {
+@media (max-width: 960px) {
 
 
 #para1 {
@@ -495,6 +497,9 @@ font-size: 15px;
   width: 100%;
 }
 
+img {
+  max-width: 100%;
+}
 
 
 }
