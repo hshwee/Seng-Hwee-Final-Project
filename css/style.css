@@ -1,0 +1,489 @@
+/*@import url('http://fonts.googleapis.com/css?family=Open+Sans:300');
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************* NAVIGATION **********/
+header {
+overflow: hidden;
+background: lightgrey;
+}
+
+header a, header label {
+display: block;
+padding: 20px;
+color: #fff;
+text-decoration: none;
+line-height: 20px;
+font-family: 'Abhaya Libre', serif;
+font-weight: 400;
+font-size: 15px;
+
+}
+
+header a:hover, header label:hover { color: #aaa; }
+
+header label {
+float: right;
+padding: 18px 20px;
+cursor: pointer;
+}
+
+header label:after {
+content: "\2261";
+font-size: 1.8em;
+}
+
+.logo {
+float: left;
+font-weight: bold;
+font-size: 1.5em;
+}
+
+nav {
+float: right;
+max-height: 0;
+width: 100%;
+-webkit-transition: max-height 0.3s; 
+-moz-transition: max-height 0.3s;
+-o-transition: max-height 0.3s;
+transition: max-height 0.3s;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+padding-bottom: 10px;
+}
+
+nav li {
+display: block;
+text-align: center;
+}
+
+nav a {
+padding: 10px;
+width: 100%;
+}
+
+#nav { display: none; }
+
+#nav:checked ~ nav {
+max-height: 200px; /* This can be anything bigger than your nav height. The transition duration works with this */
+}
+
+@media only screen and (min-width: 700px) {
+
+header label { display: none; }
+
+nav {
+width: auto;
+max-height: none;
+}
+
+nav ul {
+padding: 0;
+padding-right: 10px;
+}
+
+nav li {
+display: inline-block;
+text-align: left;
+}
+
+header nav a {
+display: inline-block;
+padding: 20px 10px;
+width: auto;
+}
+
+}
+
+/************* NAVIGATION END ************/
+
+
+.container {
+  background-color: white;
+  height: 100%;
+  min-height: 825px;
+
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #e5e5e5;
+}
+
+.gallery {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  /*background: #fff;*/
+ /* box-shadow: 0 1px 2px rgba(0,0,0,.3);*/
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 10px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 290px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.2,1.2);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+}
+
+
+
+/*ROW 1*/
+
+#row1 {
+  text-align: center;
+  margin: 50px 20px 20px 20px;
+}
+
+.mainimage {
+  background: url('../images/main.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 400px;
+  width: 100%;
+  display: inline-block;
+  background-position: 0% 50%;
+}
+
+.mainimage p {
+   text-align: center;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 20px;
+  margin: 80px ;
+  color: lightgrey;
+}
+
+
+#linebreak {
+  margin: 100px 20px;
+  border-bottom: 1px lightgrey solid;
+}
+
+
+/*TEXT PARA*/
+
+#para1 {
+  padding: 50px 400px;
+  text-align: center;
+
+}
+
+.para1head {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  color: darkgrey;
+}
+
+.para1body {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: lightgrey;
+}
+
+
+
+
+
+/*ROW 2*/
+
+#row2{
+  text-align: center;
+   margin: 10px 20px 60px 20px;
+}
+
+.small1 {
+  background: url('../images/product1a.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 200px;
+  width: 400px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.small2 {
+  background: url('../images/product1b.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 200px;
+  width: 400px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/*ROW 3*/
+
+#row3 {
+  text-align: center;
+  margin: 0 190px 20px 190px;
+}
+
+
+.bigproduct {
+  background: url('../images/bigproduct.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 300px;
+  width: 100%;
+  background-position: 0% 80%;
+}
+
+.bigproduct p {
+   text-align: center;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 130px;
+  color: white;
+}
+
+
+/*ROW 4*/
+#row4 {
+  text-align: center;
+  width: 100%;
+  margin: 50px 0px 50px 0px;
+}
+
+.smallproduct3 {
+  background: url('../images/product3.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 200px;
+  width: 400px;
+  display: inline-block;
+  background-position: 0% 80%;
+  margin: 5px;
+}
+
+.smallproduct4 {
+  background: url('../images/product4.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 200px;
+  width: 400px;
+  display: inline-block;
+  margin: 5px;
+  
+}
+
+
+/*LINEUP IMAGES*/
+
+.lineupbox {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+#lineup1 {
+  background: url('../images/lineup1.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#lineup2 {
+  background: url('../images/lineup2.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#lineup3 {
+  background: url('../images/lineup3.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#lineup4 {
+  background: url('../images/lineup4.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#lineup5 {
+  background: url('../images/lineup5.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#lineup6 {
+  background: url('../images/lineup6.jpg') no-repeat center top ;
+  background-size: cover; 
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  margin: 5px;
+}
+
+footer {
+  color: darkgrey;
+  float: left;
+  font-family: "Abhaya Libre",serif;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+
+  
+}
+
+.directory li {
+  display: inline-block;
+  padding: 20px;
+
+}
+
+.directory li a{
+  text-decoration: none;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: darkgrey;
+}
+
+.para2body {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: lightgrey;
+  padding-bottom: 50px;
+}
+
+
+#form{
+  text-align: left;
+  padding-left: 300px;
+  padding-bottom: 50px;
+  display: inline-block;
+  width: 50%;
+}
+
+label {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: darkgrey;
+  line-height: 30px;
+  padding: 10px;
+}
+
+button {
+  padding:10px;
+  margin: 8px;
+}
+
+span {
+  text-decoration: underline;
+  color:darkred;
+}
+
+h1 {
+font-family: 'Abhaya Libre', serif;
+font-weight: 400;
+font-size: 15px;
+}
+
+
+/*******responsive************/
+
+@media (max-width: 600px) {
+
+
+#para1 {
+  text-align: center;
+  margin: 50px 20px 50px 20px;
+}
+
+#row3 {
+  text-align: center;
+  margin: 0 20px 20px 20px;
+}
+
+
+.gallery {
+  width: 360px;
+  margin: 0 auto;
+  padding: 10px;
+  /*background: #fff;*/
+ /* box-shadow: 0 1px 2px rgba(0,0,0,.3);*/
+}
+
+#form{
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+}
+
+
+
+
+
+
+
