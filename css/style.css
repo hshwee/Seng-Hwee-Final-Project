@@ -205,6 +205,11 @@ body {
 /*TEXT PARA*/
 
 #para1 {
+  padding: 0px 300px 50px 300px;
+  text-align: center;
+
+}
+#para2 {
   padding: 50px 400px;
   text-align: center;
 
@@ -412,11 +417,16 @@ footer {
 
 #form{
   text-align: left;
-  padding-left: 300px;
+  padding-left: 350px;
   padding-bottom: 50px;
   display: inline-block;
-  width: 50%;
+  width: 100%;
 }
+
+.inputbars {
+  width: 300px
+}
+
 
 label {
   font-family: 'Abhaya Libre', serif;
@@ -429,7 +439,7 @@ label {
 }
 
 button {
-  padding:10px;
+  padding:5px;
   margin: 8px;
 }
 
@@ -447,13 +457,21 @@ font-size: 15px;
 
 /*******responsive************/
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 
 
 #para1 {
   text-align: center;
   margin: 50px 20px 50px 20px;
+  padding:0px 30px 0px 30px;
 }
+
+#para2 {
+  text-align: center;
+  margin: 50px 20px 50px 20px;
+  padding:0px 30px 0px 30px;
+}
+
 
 #row3 {
   text-align: center;
