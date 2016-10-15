@@ -497,10 +497,13 @@ font-size: 15px;
   width: 100%;
 }
 
-img {
+.small1 {
   max-width: 100%;
 }
 
+.small1 {
+  max-width: 100%;
+}
 
 }
 
